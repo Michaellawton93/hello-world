@@ -1,5 +1,6 @@
 #THIS PROGRAM PERFORMS CALCULATIONS INVOVLING TRIANGLES
 
+
 #DEFINING FUNCTIONS
 
 #main menu function explaining which values correspond to each option and getting input from the KB
@@ -65,5 +66,6 @@ while(calc.isnumeric()):
         
 
 #While loop that is executed if an only if the user enters q at the main menu
-    while(calc == "q"):
-        quit()
+if(calc == "q"):
+    print("Goodbye!")
+    quit()
