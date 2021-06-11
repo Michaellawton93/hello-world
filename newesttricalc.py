@@ -1,6 +1,7 @@
 #THIS PROGRAM PERFORMS CALCULATIONS INVOVLING TRIANGLES
 
 
+
 #DEFINING FUNCTIONS
 
 #main menu function explaining which values correspond to each option and getting input from the KB
@@ -46,7 +47,9 @@ while(calc.isnumeric()):
     while(calc == "1"):
         missingAngle()
         calc = (input("enter 1 for missing angle calculation, 2 for hypotenuse calculation, 3 to calculate the area of a right angled triangle or q to quit: "))
-        break
+        if(calc != "1"):
+            break
+
        
     
 
@@ -54,7 +57,9 @@ while(calc.isnumeric()):
     while(calc == "2"):
         hypotenuse()
         calc = (input("enter 1 for missing angle calculation, 2 for hypotenuse calculation, 3 to calculate the area of a right angled triangle or q to quit: "))
-        break
+        if(calc != "2"):
+            break
+        
        
     
 
@@ -62,10 +67,12 @@ while(calc.isnumeric()):
     while(calc == "3"):
         area()
         calc = (input("enter 1 for missing angle calculation, 2 for hypotenuse calculation, 3 to calculate the area of a right angled triangle or q to quit: "))
-        break
+        if(calc != "3"):
+            break
         
 
 #While loop that is executed if an only if the user enters q at the main menu
 if(calc == "q"):
     print("Goodbye!")
     quit()
+
