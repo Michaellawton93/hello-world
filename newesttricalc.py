@@ -49,9 +49,7 @@ while(calc.isnumeric()):
         calc = (input("enter 1 for missing angle calculation, 2 for hypotenuse calculation, 3 to calculate the area of a right angled triangle or q to quit: "))
         if(calc != "1"):
             break
-
-       
-    
+            
 
 #While loop that is executed if and only if the user enters 2 at main menu
     while(calc == "2"):
@@ -60,9 +58,7 @@ while(calc.isnumeric()):
         if(calc != "2"):
             break
         
-       
-    
-
+      
 #While loop that is executed if and only if the user enters 3 at main menu
     while(calc == "3"):
         area()
